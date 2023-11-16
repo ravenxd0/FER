@@ -4,7 +4,7 @@ from keras.models import load_model
 from keras.applications.mobilenet_v2 import preprocess_input
 
 face_classifier = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
-classifier = load_model('my_mobilenetv2.h5')
+classifier = load_model('models/my_mobilenetv2.h5')
 
 emotion_labels = ["Angry","Disgust","Fear","Happy","Neutral","Sad","Surprise"]
 
